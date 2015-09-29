@@ -37,53 +37,53 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                <p:accordionPanel multiple="true" dynamic="true" class="row">
-                    <p:tab title="MENU" >
-                        <h:panelGrid columns="2" cellpadding="2" class="row">
-                        <h2>Pizzas</h2>
-                        <table class="table table-condensed">
-                            <thead>
-                                <tr>
+                    <p:accordionPanel multiple="true" dynamic="true" class="row">
+                        <p:tab title="MENU" >
+                            <h:panelGrid columns="2" cellpadding="2" class="row">
+                                <h2>Pizzas</h2>
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
 
-                                    <th><h3>Informacion</h3></th>
-                                    <th><h3>Precio</h3></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><h4> La paisa</h4>Chorizo tocineta maicitos y guacamole</td>
-                                    <td><br></br>$10,000</td>
-                                    <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
-                                </tr>
-                                <tr>
-                                    <td><h4>Especial</h4>  Jamón salami cebolla pollo champiñones pimentón y tomate</td>
-                                    <td><br></br>$10,000</td>
-                                    <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
-                                </tr>
-                                <tr>
-                                    <td><h4>2 estaciones</h4>Pollo champiñón y hawaiana</td>
-                                    <td><br></br>$10,000</td>
-                                    <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
-                                </tr>
-                                <tr>
-                                    <td><h4>4P's</h4>Piña pollo pimentón y peperoni</td>
-                                    <td><br></br>$10,000</td>
-                                    <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
-                                </tr>
-                                <tr>
-                                    <td><h4>Mexicana</h4> Carne salsa boloñesa crema de frijol tomate guacamole nachos crema sour maicitos</td>
-                                    <td><br></br>$10,000</td>
-                                    <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </h:panelGrid>
-                    </p:tab>
-                </p:accordionPanel>
-                    </div>
+                                            <th><h3>Informacion</h3></th>
+                                            <th><h3>Precio</h3></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><h4> La paisa</h4>Chorizo tocineta maicitos y guacamole</td>
+                                            <td><br></br>$10,000</td>
+                                            <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Especial</h4>  Jamón salami cebolla pollo champiñones pimentón y tomate</td>
+                                            <td><br></br>$10,000</td>
+                                            <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>2 estaciones</h4>Pollo champiñón y hawaiana</td>
+                                            <td><br></br>$10,000</td>
+                                            <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>4P's</h4>Piña pollo pimentón y peperoni</td>
+                                            <td><br></br>$10,000</td>
+                                            <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Mexicana</h4> Carne salsa boloñesa crema de frijol tomate guacamole nachos crema sour maicitos</td>
+                                            <td><br></br>$10,000</td>
+                                            <td><br></br><button type="button" class="btn btn-default">Agregar</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </h:panelGrid>
+                        </p:tab>
+                    </p:accordionPanel>
+                </div>
                 <div class="container">
-                    
+
                     <div class="col-sm-4" style="float: right">
                         <table class="table table-condensed">
                             <thead>
@@ -114,7 +114,53 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <button type="button" class="btn btn-default" style="float: right">Solcitar</button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" style="float: right">Solicitar</button>
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">Confirmacion de Pedido</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-responsivee">
+                                            <thead>
+                                                <tr>
+                                                    <h3>Pedido: </h3>
+                                                    <th><h4>Informacion</h4></th>
+                                                    <th><h4>Precio</h4></th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table table-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><h4>Costo Total</h4></td>
+                                                    <td><br></br>$0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Confirmado</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </ui:define>

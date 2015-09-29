@@ -10,72 +10,132 @@
         <ui:composition template="./Template.xhtml">
 
             <ui:define name="content" >
-                <div class="container">
-                    <div class="jumbotron">
-                        <h1>Pide domicilios en Medellín</h1><h2>De este menu dispone pizzotas</h2>
-                    </div>
-                </div>
-                <h3>Menu</h3>
-                <p:accordionPanel multiple="true" dynamic="true" class="row">
-                    <p:tab title="Pizzas">
-                        <h:panelGrid columns="2" cellpadding="10" class="row">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-8" style="float: left">
-                                        <div id="pizza">
-                                            <img class="img-responsive" src="../Img/pizza.jpg" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4" >
-                                        <table class="table table-condensed">
-                                            <thead>
-                                                <tr>
+                <style>
+                    body {
+                        position: relative; 
+                    }
+                    .affix {
+                        top:0;
+                        width: 100%;
+                        z-index: 9999 !important;
+                    }
+                    .navbar {
+                        margin-bottom: 0px;
+                    }
 
-                                                    <th><h3>Informacion</h3></th>
-                                                    <th><h3>Precio</h3></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><h4> La paisa</h4>Chorizo tocineta maicitos y guacamole</td>
-                                                    <td><br></br>$10,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h4>Especial</h4>  Jamón salami cebolla pollo champiñones pimentón y tomate</td>
-                                                    <td><br></br>$10,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h4>2 estaciones</h4>Pollo champiñón y hawaiana</td>
-                                                    <td><br></br>$10,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h4>4P's</h4>Piña pollo pimentón y peperoni</td>
-                                                    <td><br></br>$10,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h4>Mexicana</h4> Carne salsa boloñesa crema de frijol tomate guacamole nachos crema sour maicitos</td>
-                                                    <td><br></br>$10,000</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                    .affix ~ .container-fluid {
+                        position: relative;
+                        top: 50px;
+                    }
+                    #section1 {color: #000; background-color: #fff;}
+                    #section2 {color: #000; background-color: #fff;}
+                    #section3 {color: #000; background-color: #fff;}//padding-top:50px;height:500px;
+                </style>
+                <body data-spy="scroll" data-target=".navbar" data-offset="50">
+                    <div class="container-fluid" style="height: 200px">
+                        <div class="jumbotron">
+                            <h1>Pide domicilios en Medellín</h1><h2>De este menu dispone pizzotas</h2>
+                        </div>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>                        
+                                </button>
+                                <a class="navbar-brand" href="#">Menu</a>
+                            </div>
+                            <div>
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#section1">Pizzas</a></li>
+                                        <li><a href="#section2">Lasaña</a></li>
+                                        <li><a href="#section3">Bebidas</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </h:panelGrid>
-                    </p:tab>
-                    <p:tab title="Lasañas">
-                        <h:panelGrid columns="2" cellpadding="10">
-                            <p:graphicImage name="demo/images/godfather/godfather2.jpg" />
-                            <h:outputText value="Francis Ford Coppola's legendary..." />
-                        </h:panelGrid>
-                    </p:tab>
-                    <p:tab title="Bebidas">
-                        <h:panelGrid columns="2" cellpadding="10">
-                            <p:graphicImage name="demo/images/godfather/godfather3.jpg" />
-                            <h:outputText value="After a break of more than 15 years...." />
-                        </h:panelGrid>
-                    </p:tab>
-                </p:accordionPanel>
+                        </div>
+                    </nav> 
+                    <div id="section1" class="container-fluid">
+                        <h1>Pizzas</h1>
+                        <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+
+                                            <th><h3>Informacion</h3></th>
+                                            <th><h3>Precio</h3></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><h4> La paisa</h4>Chorizo tocineta maicitos y guacamole</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Especial</h4>  Jamón salami cebolla pollo champiñones pimentón y tomate</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>2 estaciones</h4>Pollo champiñón y hawaiana</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>4P's</h4>Piña pollo pimentón y peperoni</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Mexicana</h4> Carne salsa boloñesa crema de frijol tomate guacamole nachos crema sour maicitos</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                    </div>
+                    <div id="section2" class="container-fluid">
+                        <h1>Lasaña</h1>
+                        <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+
+                                            <th><h3>Informacion</h3></th>
+                                            <th><h3>Precio</h3></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><h4> La paisa</h4>Chorizo tocineta maicitos y guacamole</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Especial</h4>  Jamón salami cebolla pollo champiñones pimentón y tomate</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>2 estaciones</h4>Pollo champiñón y hawaiana</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>4P's</h4>Piña pollo pimentón y peperoni</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Mexicana</h4> Carne salsa boloñesa crema de frijol tomate guacamole nachos crema sour maicitos</td>
+                                            <td><br></br>$10,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                    </div>
+                    <div id="section3" class="container-fluid">
+                        <h1>Bebidas</h1>
+                        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                    </div>
+                </body>
             </ui:define>
 
         </ui:composition>
