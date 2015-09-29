@@ -11,57 +11,49 @@
         <h:outputStylesheet name="./css/bootstrap.css"/>
         <h:outputScript name="./js/jquery-1.11.3.min.js"/>
         <h:outputScript name="./js/bootstrap.js"/>
-        
-        
+
+        <link rel="icon" type="image/png" href="../Img/logo.png" />
         <title>Pizzotas</title>
     </h:head>
 
     <h:body>
 
         <div id="top">
-                <header>
-                    <nav class="navbar navbar-default navbar-fixed-top">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
-                                    <span class="sr-only">Menu</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-phone"></span>www.Pizzotas.com</a>
-                            </div>
-                            <div class="collapse navbar-collapse" id="navbar-1">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="#"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Productos</a></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Realizar pedido</a></li>
-                                </ul>
-                                <form action="" class="navbar-form navbar-right" role="search">
-                                    <div class="input-group">
-                                        Carrera
-                                        <input type="text" class="text-info" placeholder="Direccion"/>
-                                        #
-                                        <input type="text" class="text-info" placeholder="Direccion"/>
-                                        -- 
-                                            <span class="input-group-btn">
-                                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                                            </span>
-                                    </div>
-                                </form>
-                            </div>
-                            
+            <header>
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                                <span class="sr-only">Menu</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="inicio.xhtml" class="navbar-brand"><span class="glyphicon glyphicon-phone"></span>www.Pizzotas.com</a>
                         </div>
-                    </nav>
-                </header>
+                        <div class="collapse navbar-collapse" id="navbar-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="inicio.xhtml"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+                                <li><a href="Productos.xhtml"><span class="glyphicon glyphicon-eye-open"></span> Productos</a></li>
+                                <li><a href="realizarPedido.xhtml"><span class="glyphicon glyphicon-shopping-cart"></span> Realizar pedido</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </header>
         </div>
 
         <div id="content" class="center_content">
-            <ui:insert name="content">Content</ui:insert>
+            <ui:insert name="content">
+
+            </ui:insert>
         </div>
 
         <div id="bottom">
-            <ui:insert name="bottom">Diseñado por Joan</ui:insert>
+            <ui:insert name="bottom">
+                <span class="glyphicon glyphicon-user"></span> Diseñado por Joan
+            </ui:insert>
         </div>
 
     </h:body>

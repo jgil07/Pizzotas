@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./Template.xhtml">
+
+            <ui:define name="content" >
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1>Pide domicilios en Medellín</h1><h2>De este menu dispone pizzotas</h2>
+                    </div>
+                </div>
+                <h3>Menu</h3>
+                <p:accordionPanel multiple="true" dynamic="true" class="row">
+                    <p:tab title="Pizzas">
+                        <h:panelGrid columns="2" cellpadding="10" class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8" style="float: left">
+                                        <div id="pizza">
+                                            <img class="img-responsive" src="../Img/pizza.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" >
+                                        <table class="table table-condensed">
+                                            <thead>
+                                                <tr>
+
+                                                    <th><h3>Informacion</h3></th>
+                                                    <th><h3>Precio</h3></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><h4> La paisa</h4>Chorizo tocineta maicitos y guacamole</td>
+                                                    <td><br></br>$10,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>Especial</h4>  Jamón salami cebolla pollo champiñones pimentón y tomate</td>
+                                                    <td><br></br>$10,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>2 estaciones</h4>Pollo champiñón y hawaiana</td>
+                                                    <td><br></br>$10,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>4P's</h4>Piña pollo pimentón y peperoni</td>
+                                                    <td><br></br>$10,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>Mexicana</h4> Carne salsa boloñesa crema de frijol tomate guacamole nachos crema sour maicitos</td>
+                                                    <td><br></br>$10,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </h:panelGrid>
+                    </p:tab>
+                    <p:tab title="Lasañas">
+                        <h:panelGrid columns="2" cellpadding="10">
+                            <p:graphicImage name="demo/images/godfather/godfather2.jpg" />
+                            <h:outputText value="Francis Ford Coppola's legendary..." />
+                        </h:panelGrid>
+                    </p:tab>
+                    <p:tab title="Bebidas">
+                        <h:panelGrid columns="2" cellpadding="10">
+                            <p:graphicImage name="demo/images/godfather/godfather3.jpg" />
+                            <h:outputText value="After a break of more than 15 years...." />
+                        </h:panelGrid>
+                    </p:tab>
+                </p:accordionPanel>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
