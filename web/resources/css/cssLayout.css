@@ -119,3 +119,7 @@ body {
 #section1 {color: #000; background-color: #fff;}
 #section2 {color: #000; background-color: #fff;}
 #section3 {color: #000; background-color: #fff;}//padding-top:50px;height:500px;
+
+.input-recaptcha{
+ width:172px;   
+}
