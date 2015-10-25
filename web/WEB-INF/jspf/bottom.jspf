@@ -3,6 +3,6 @@
 
 <div id="bottom">
             <ui:insert name="bottom">
-                <span class="glyphicon glyphicon-user"></span> Diseñado por Joan
+                <span class="glyphicon glyphicon-user"></span> Diseñado por Pizzotas
             </ui:insert>
 </div>
