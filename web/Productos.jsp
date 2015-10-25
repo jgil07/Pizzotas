@@ -23,8 +23,8 @@
                             <h1>Pide domicilios en Medellín</h1><h2>De este menu dispone pizzotas</h2>
                         </div>
                     </div>
-                    <br></br>
-                    <br></br>
+                    <br>
+                    <br>
                     <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
                         <div class="container-fluid">
                             <div class="navbar-header">
@@ -60,27 +60,27 @@
                             <tbody>
                                <tr>
                                     <td><h4> La paisa</h4>Chorizo tocineta maicitos y guacamole</td>
-                                    <td><br></br>$10,000</td>
+                                    <td><br>$10,000</td>
                                 </tr>
                                 <tr>
                                     <td><h4>Especial</h4>  Jamón salami cebolla pollo champiñones pimentón y tomate</td>
-                                    <td><br></br>$10,000</td>
+                                    <td><br>$10,000</td>
                                 </tr>
                                 <tr>
                                     <td><h4>2 estaciones</h4>Pollo champiñón y hawaiana</td>
-                                    <td><br></br>$10,000</td>
+                                    <td><br>$10,000</td>
                                 </tr>
                                 <tr>
                                     <td><h4>4P's</h4>Piña pollo pimentón y peperoni</td>
-                                    <td><br></br>$10,000</td>
+                                    <td><br>$10,000</td>
                                 </tr>
                                 <tr>
                                     <td><h4>Mexicana</h4> Carne salsa boloñesa crema de frijol tomate guacamole nachos crema sour maicitos</td>
-                                    <td><br></br>$10,000</td>
+                                    <td><br>$10,000</td>
                                 </tr>
                                 <tr>
                                     <td><h4>Ranchera</h4> Ranchera tocineta y maicitos</td>
-                                    <td><br></br>$10,000</td>
+                                    <td><br>$10,000</td>
                                 </tr>
                                 <tr>
                                     <td><h4>Pollo teriyaki</h4> Champiñones pollo pimentón cebolla raices chinas y salsa teriyaki</td>
