@@ -1,0 +1,38 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div>
+        <div id="top">
+            <header>
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            
+                            <a href="inicio.jsp" class="navbar-brand"><span class="glyphicon glyphicon-phone"></span>www.Pizzotas.com</a>
+                            
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="inicio.jsp"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+                                <li><a href="Productos.jsp"><span class="glyphicon glyphicon-eye-open"></span> Productos</a></li>
+                                <li><a href="realizarPedido.jsp"><span class="glyphicon glyphicon-shopping-cart"></span> Realizar pedido</a></li>
+                            </ul>
+                             <form id="signin" class="navbar-form navbar-right" role="form">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Usuario o Correo">                                        
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Contraseña">                                        
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                   </form>
+                        </div>
+
+                    </div>
+                </nav>
+            </header>
+        </div>
+</div>
