@@ -30,6 +30,7 @@
                 </div>
                 <div class="col-sm-4">
                     <span class="glyphicon glyphicon-user logo"></span>
+                    <p><a href="login.jsp"><button type="button" class="btn btn-danger">Administrador</button></a></p>
                 </div>
             </div>
         </div>
@@ -197,13 +198,13 @@
                 <div class="col-sm-7">
                     <div class="row">
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+                            <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required="">
                         </div>
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Correo" type="email" required>
+                            <input class="form-control" id="email" name="email" placeholder="Correo" type="email" required="">
                         </div>
                     </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5"></textarea><br>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5" required=""></textarea><br>
                     <div class="row">
                         <div class="col-sm-12 form-group">
                             <button class="btn btn-default pull-right" type="submit">Enviar</button>
