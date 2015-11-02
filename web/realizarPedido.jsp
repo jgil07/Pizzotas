@@ -9,12 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <%@include file="WEB-INF/jspf/jscss.jspf" %>
+        <%@include file="WEB-INF/jspf/jscssmod.jspf" %>
         <link rel="icon" type="image/png" href="../Img/favicon.ico" />
         <title>PIZZOTAS PIZZERIA</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/top.jspf" %>
+        <%@include file="WEB-INF/jspf/topmod.jspf" %>
     <ui:composition template="./Template.xhtml">
         <ui:define name="content">
             <div class="container">

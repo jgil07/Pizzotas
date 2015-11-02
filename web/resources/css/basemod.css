@@ -90,12 +90,6 @@ img{
     width: 100%;
 }
 
-#contenidoInicial{
-    background-image: url(../..//Img/plantilla-powerpoint-cuadrados.jpg);
-    background-color: #761c19;
-    color: white;
-}
-
 .jumbotron{
     background-image: url(../..//Img/cocina.jpg);   
     margin-bottom: 0px;
